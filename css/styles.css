@@ -714,7 +714,7 @@ ol {
 .link-modal {
   color: #4d5ae5;
 }
-input[type="checkbox"]: .form-modal-label .modal-checkbox-input {
+input[type="checkbox"] .form-modal-label .modal-checkbox-input {
   border: none;
   background-color: #404bbf;
   fill: #f4f4fd;
@@ -722,5 +722,23 @@ input[type="checkbox"]: .form-modal-label .modal-checkbox-input {
 .form-modal-div:focus-within svg {
   fill: #4d5ae5;
 }
-.svg-ptaszek {
+/* ZADANIE DOMOWE 6 */
+body {
+  overflow-x: hidden;
+}
+@media (max-width: 320px) {
+  body {
+  }
+}
+@media (min-width: 321px) and (max-width: 768px) {
+  body {
+  }
+}
+@media (min-width: 769px) and (max-width: 1158px) {
+  body {
+  }
+}
+@media (min-width: 1159px) {
+  body {
+  }
 }
