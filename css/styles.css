@@ -90,6 +90,14 @@
   color: #434455;
   margin-bottom: 8px;
 }
+.paragraph-one {
+  font-weight: 400;
+  line-height: 1.5em;
+  letter-spacing: 0.02em;
+  background-color: #ffffff;
+  color: #434455;
+  margin-bottom: 8px;
+}
 .paragraph_footer {
   max-width: 264px;
 }
@@ -115,6 +123,49 @@
   background-size: cover;
   margin: 0 auto;
 }
+@media screen and (max-width: 768px) {
+  .container {
+    max-width: 100%;
+    background-position: center;
+  }
+  .hsek-b-list,
+  .hsek-c-list,
+  .hsek-d-list {
+    display: block;
+  }
+  .hea-c {
+    max-width: auto 0;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 111%;
+    letter-spacing: 0.02em;
+    text-align: center;
+    margin-bottom: 72px;
+  }
+  .paragraph {
+    max-width: auto 0;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0.02em;
+    margin-bottom: 72px;
+  }
+  .lis-a {
+    border-radius: 0 0 4px 4px;
+    padding: 0px 0px 32px 0px;
+    width: auto 0;
+  }
+  img {
+    margin: auto;
+  }
+  .giewont {
+    height: 288px;
+    width: 288px;
+    top: 0;
+    left: 0;
+  }
+}
+
 .section-b {
   color: #2e2f42;
   padding-top: 120px;
@@ -714,7 +765,7 @@ ol {
 .link-modal {
   color: #4d5ae5;
 }
-input[type="checkbox"]: .form-modal-label .modal-checkbox-input {
+input[type="checkbox"] .form-modal-label .modal-checkbox-input {
   border: none;
   background-color: #404bbf;
   fill: #f4f4fd;
@@ -722,5 +773,19 @@ input[type="checkbox"]: .form-modal-label .modal-checkbox-input {
 .form-modal-div:focus-within svg {
   fill: #4d5ae5;
 }
-.svg-ptaszek {
+/* zadanie 6 */
+
+@media screen and (max-width: 768px) {
+  .modal {
+    display: none;
+    width: 90%;
+    height: 90%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .menu,
+  .address,
+  .boxx {
+    display: none;
+  }
 }
