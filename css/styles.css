@@ -98,6 +98,14 @@
   color: #434455;
   margin-bottom: 8px;
 }
+.paragraph-app {
+  font-weight: 400;
+  line-height: 1.5em;
+  letter-spacing: 0.02em;
+  background-color: #ffffff;
+  color: #434455;
+  margin-bottom: 8px;
+}
 .paragraph_footer {
   max-width: 264px;
 }
@@ -154,15 +162,30 @@
     border-radius: 0 0 4px 4px;
     padding: 0px 0px 32px 0px;
     width: auto 0;
+    margin-bottom: 72px;
+  }
+  .hsek-d-list-a {
+    border-radius: 0 0 4px 4px;
+    padding: 0px 0px 32px 0px;
+    width: 288px;
+    height: 400px;
+    margin-bottom: 72px;
   }
   img {
     margin: auto;
   }
-  .giewont {
-    height: 288px;
-    width: 288px;
-    top: 0;
-    left: 0;
+
+  .hsek-d-list {
+    display: center;
+    border-bottom: 1px solid var(--cornflower);
+    border-left: 1px solid var(--cornflower);
+    border-right: 1px solid var(--cornflower);
+    padding: 32px 16px;
+    width: auto;
+  }
+
+  .footer {
+    display: block;
   }
 }
 
@@ -261,6 +284,20 @@ a:hover {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
+.link-a-menu {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 111%;
+  letter-spacing: 0.02em;
+  gap: 40px;
+  color: #404bbf;
+  text-decoration: none;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
 .link-b {
   font-weight: 500;
   line-height: 1.5;
@@ -270,6 +307,19 @@ a:hover {
   padding-top: 24px;
   padding-bottom: 24px;
   position: relative;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.link-b-menu {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 111%;
+  letter-spacing: 0.02em;
+  gap: 40px;
+  color: #2e2f42;
+  text-decoration: none;
+  padding-top: 24px;
+  padding-bottom: 24px;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -310,8 +360,20 @@ a:hover {
   display: flex;
   gap: 40px;
 }
+.address-list-menu {
+  display: block;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 120%;
+  letter-spacing: 0.02em;
+}
 .address {
   transform: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.address-menu {
+  display: block;
+  width: 193px;
+  height: 72px;
 }
 
 .address-a {
@@ -402,6 +464,12 @@ a:hover {
   gap: 40px;
 }
 .container {
+  width: 1158px;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.container-footer {
   width: 1158px;
   margin: 0 auto;
   padding-left: 15px;
@@ -506,6 +574,18 @@ ol {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
+.icons-menu-link {
+  width: 100%;
+  height: 100%;
+  background-color: #4d5ae5;
+  display: flex;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
 .link-media-a:hover,
 .link-media-a:focus {
   background-color: #404bbf;
@@ -539,7 +619,27 @@ ol {
   background-color: #404bbf;
   border-radius: 2px;
 }
-.footer .container {
+.link-a-menu::after {
+  content: "";
+  width: 100%;
+  position: absolute;
+  left: 0;
+  bottom: -1px;
+  height: 4px;
+  background-color: #404bbf;
+  border-radius: 2px;
+}
+.link-a-menu::after {
+  content: "";
+  width: 100%;
+  position: absolute;
+  left: 0;
+  bottom: -1px;
+  height: 4px;
+  background-color: #404bbf;
+  border-radius: 2px;
+}
+.footer .container-footer {
   display: flex;
   align-items: baseline;
 }
@@ -660,6 +760,22 @@ ol {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+.lines {
+  position: right;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #e7e9fc;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 0;
+  cursor: pointer;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 .modal-button:hover,
 .modal-button:focus {
   background-color: #404bbf;
@@ -773,6 +889,36 @@ input[type="checkbox"] .form-modal-label .modal-checkbox-input {
 .form-modal-div:focus-within svg {
   fill: #4d5ae5;
 }
+.new-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(46, 47, 66, 0.4);
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.new-menu-window {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 408px;
+  min-height: 584px;
+  background: #fcfcfc;
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  padding: 72px 24px 24px 24px;
+}
+.menu-box {
+  display: block;
+  gap: 40px;
+  width: 151px;
+  height: 200px;
+}
 /* zadanie 6 */
 
 @media screen and (max-width: 768px) {
@@ -786,6 +932,11 @@ input[type="checkbox"] .form-modal-label .modal-checkbox-input {
   .menu,
   .address,
   .boxx {
+    display: none;
+  }
+}
+@media (min-width: 768px) and (max-width: 1439px) {
+  .nav-new {
     display: none;
   }
 }
