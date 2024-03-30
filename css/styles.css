@@ -1019,6 +1019,9 @@ input[type="checkbox"] .form-modal-label .modal-checkbox-input {
 .button-menu {
   display: none;
 }
+.lines {
+  display: none;
+}
 /* zadanie 6 */
 
 @media screen and (max-width: 768px) {
@@ -1026,10 +1029,9 @@ input[type="checkbox"] .form-modal-label .modal-checkbox-input {
     max-width: 320px;
   }
   .button-menu {
-    display: block;
     width: 24px;
     height: 24px;
-
+    background-color: transparent;
     margin-right: 16px;
   }
 
@@ -1039,10 +1041,10 @@ input[type="checkbox"] .form-modal-label .modal-checkbox-input {
     height: 90%;
   }
 
-  .lines {
+  /* .lines {
     display: block;
-    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  }
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1); 
+  }*/
   .line {
     background-color: transparent;
   }
