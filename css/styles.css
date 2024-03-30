@@ -301,14 +301,19 @@
   transition-property: background-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-button {
   cursor: pointer;
   border: none;
   transition-property: all;
   border-radius: 4px;
   background-color: #4d5ae5;
 }
+/* button {
+  cursor: pointer;
+  border: none;
+  transition-property: all;
+  border-radius: 4px;
+  background-color: #4d5ae5;
+} */
 .button:hover,
 .button:focus {
   background-color: #404bbf;
@@ -1011,11 +1016,21 @@ input[type="checkbox"] .form-modal-label .modal-checkbox-input {
   width: 151px;
   height: 200px; */
 }
+.button-menu {
+  display: none;
+}
 /* zadanie 6 */
 
 @media screen and (max-width: 768px) {
   .container {
     max-width: 320px;
+  }
+  .button-menu {
+    display: block;
+    width: 24px;
+    height: 24px;
+
+    margin-right: 16px;
   }
 
   .modal {
