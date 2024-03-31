@@ -42,6 +42,15 @@
   margin-bottom: 8px;
   margin-bottom: 8px;
 }
+.hea-c-ppp {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  background-color: #ffffff;
+  margin-bottom: 8px;
+  margin-bottom: 8px;
+}
 .hsek-c {
   font-weight: 700;
   font-size: 36px;
@@ -131,9 +140,9 @@
   background-size: cover;
   margin: 0 auto;
 }
-.new-menu-window {
+/* .new-menu-window {
   transform: translateX(0%);
-}
+} */
 
 .nav-new {
   display: none;
@@ -230,7 +239,7 @@
     color: #ffffff;
     padding-top: 188px;
     padding-bottom: 188px;
-    max-width: 1439px;
+    max-width: 640px;
     background-image: linear-gradient(
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
@@ -266,9 +275,7 @@
   }
   .lis-a {
     border-radius: 0 0 4px 4px;
-    padding: 0px 0px 32px 0px;
     width: auto 0;
-    margin-bottom: 72px;
   }
   .hsek-d-list-a {
     border-radius: 0 0 4px 4px;
@@ -660,7 +667,7 @@ ol {
   display: flex;
   justify-content: center;
   gap: 40px;
-  margin-top: 180px;
+  margin-top: 40px;
   padding: 0;
 }
 .li-media-two {
@@ -1040,6 +1047,9 @@ input[type="checkbox"] .form-modal-label .modal-checkbox-input {
   width: 151px;
   height: 200px; */
 }
+.button-menu {
+  display: none;
+}
 
 /* zadanie 6 */
 
@@ -1085,7 +1095,7 @@ input[type="checkbox"] .form-modal-label .modal-checkbox-input {
     letter-spacing: 0.02em;
     text-align: center;
     color: #fff;
-    max-width: 216px;
+    max-width: 320px;
     margin-bottom: 72px;
   }
 
@@ -1099,7 +1109,25 @@ input[type="checkbox"] .form-modal-label .modal-checkbox-input {
     font-size: 20px;
     line-height: 120%;
     letter-spacing: 0.02em;
+    text-align: left;
+    color: #2e2f42;
+  }
+  .hea-c-ppp {
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 120%;
+    letter-spacing: 0.02em;
     text-align: center;
+    color: #2e2f42;
+  }
+  .paragraph-app {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0.02em;
+    text-align: left;
     color: #2e2f42;
   }
 
@@ -1130,6 +1158,9 @@ input[type="checkbox"] .form-modal-label .modal-checkbox-input {
 }
 @media (min-width: 768px) and (max-width: 1439px) {
   .nav-new {
+    display: none;
+  }
+  .button-menu {
     display: none;
   }
 }
@@ -1194,11 +1225,22 @@ input[type="checkbox"] .form-modal-label .modal-checkbox-input {
     max-width: 165px;
     align-self: center;
   }
+  .li-a {
+    margin-bottom: 0;
+  }
 }
 
 @media (min-width: 768px) and (max-width: 1158px) {
   .container {
     width: 768px;
+  }
+  .button-menu {
+    width: 24px;
+    height: 24px;
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    line-height: 0;
   }
 
   .hsek-b-list {
@@ -1219,6 +1261,7 @@ input[type="checkbox"] .form-modal-label .modal-checkbox-input {
   }
   .li-a {
     width: calc((100% - 24px) / 2);
+    margin-bottom: 0;
   }
 
   .section-c .container {
@@ -1250,5 +1293,32 @@ input[type="checkbox"] .form-modal-label .modal-checkbox-input {
 
   .form-footer {
     margin: 0;
+  }
+  .hea-c {
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 120%;
+    letter-spacing: 0.02em;
+    text-align: left;
+    color: #2e2f42;
+  }
+  .hea-c-ppp {
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 120%;
+    letter-spacing: 0.02em;
+    text-align: center;
+    color: #2e2f42;
+  }
+  .paragraph-app {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0.02em;
+    text-align: left;
+    color: #2e2f42;
   }
 }
