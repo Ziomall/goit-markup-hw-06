@@ -42,6 +42,15 @@
   margin-bottom: 8px;
   margin-bottom: 8px;
 }
+.hea-c-inna {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  background-color: #ffffff;
+  margin-bottom: 8px;
+  margin-bottom: 8px;
+}
 .hea-c-ppp {
   font-weight: 500;
   font-size: 20px;
@@ -146,15 +155,15 @@
 .nav-new {
   display: none;
 }
-@media screen (min-device-pixel-ratio: 2),
+@media screen and (min-device-pixel-ratio: 2),
   screen and (min-resolution: 192dpi),
-  screen and (min-resolution: 2dpi), {
+  screen and (min-resolution: 2dpi) {
   .section-a {
     background-image: linear-gradient(
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
       ),
-      url(../images/hero image-mobile-x2.jpg);
+      url(../images/hero\ image-mobile-x2.jpg);
   }
 }
 
@@ -166,7 +175,6 @@
 }
 
 .hsek-c-list,
-.hsek-d-list,
 .nav-new {
   display: block;
 }
@@ -202,9 +210,7 @@
 }
 .lis-a {
   border-radius: 0 0 4px 4px;
-  padding: 0px 0px 32px 0px;
   width: auto 0;
-  margin-bottom: 72px;
 }
 .hsek-d-list-a {
   border-radius: 0 0 4px 4px;
@@ -253,6 +259,7 @@ img {
     letter-spacing: 0.02em;
     text-align: center;
     margin-bottom: 72px;
+    text-align: center;
   }
   .paragraph {
     max-width: auto 0;
@@ -1119,6 +1126,15 @@ input[type="checkbox"] .form-modal-label .modal-checkbox-input {
     text-align: center;
     color: #2e2f42;
   }
+  .hea-c-inna {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    background-color: #ffffff;
+    margin-bottom: 8px;
+    margin-bottom: 8px;
+  }
   .paragraph-app {
     font-family: "Roboto", sans-serif;
     font-weight: 400;
@@ -1145,6 +1161,31 @@ input[type="checkbox"] .form-modal-label .modal-checkbox-input {
     letter-spacing: 0.02em;
     color: #2e2f42;
     text-align: left;
+  }
+  .logo-footer {
+    font-family: "Raleway", sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #4d5ae5;
+    display: block;
+    text-align: center;
+  }
+  .form-input {
+    width: 288px;
+    height: 40px;
+    border: 1px solid #ffffff;
+    background-color: transparent;
+    font-size: 12px;
+    line-height: 2;
+    letter-spacing: 0.04em;
+    padding-left: 16px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    color: #ffffff;
   }
 }
 @media screen and (max-width: 768px) {
@@ -1177,12 +1218,6 @@ input[type="checkbox"] .form-modal-label .modal-checkbox-input {
     margin: 0;
   }
 
-  .footer-a {
-    /* display: flex;
-    flex-direction: column; */
-    margin: 72px;
-  }
-
   .logo-footer {
     font-family: "Raleway", sans-serif;
     font-weight: 700;
@@ -1192,9 +1227,8 @@ input[type="checkbox"] .form-modal-label .modal-checkbox-input {
     text-transform: uppercase;
     text-decoration: none;
     color: #4d5ae5;
-    margin-right: 76px;
     display: block;
-    margin-bottom: 16px;
+    text-align: center;
   }
 
   .paragraph_footer {
@@ -1217,6 +1251,13 @@ input[type="checkbox"] .form-modal-label .modal-checkbox-input {
 
   .social-p {
     text-align: center;
+    align-items: baseline;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #ffffff;
+    margin-bottom: 16px;
   }
 
   .form-form {
