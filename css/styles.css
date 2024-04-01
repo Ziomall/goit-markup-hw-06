@@ -97,7 +97,6 @@
   letter-spacing: 0.02em;
   background-color: #ffffff;
   color: #434455;
-  margin-bottom: 8px;
 }
 .paragraph-one {
   font-weight: 400;
@@ -147,89 +146,79 @@
 .nav-new {
   display: none;
 }
-@media screen and (max-width: 768px) {
-  .container {
-    max-width: 100%;
-    background-position: center;
-  }
+@media screen (min-device-pixel-ratio: 2),
+  screen and (min-resolution: 192dpi),
+  screen and (min-resolution: 2dpi), {
   .section-a {
-    background-color: #2e2f42;
-    color: #ffffff;
-    padding-top: 188px;
-    padding-bottom: 188px;
-    max-width: 768px;
     background-image: linear-gradient(
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
       ),
-      url(../images/hero\ image-mobile.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    margin: 0 auto;
-  }
-  .hsek-b-list,
-  .hsek-c-list,
-  .hsek-d-list,
-  .nav-new {
-    display: block;
-  }
-  .hsek-c-list {
-    display: flex;
-    flex-direction: column;
-    gap: 72px;
-    align-items: center;
-  }
-
-  .nav-new {
-    display: none;
-  }
-  .hea-c {
-    max-width: auto 0;
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 111%;
-    letter-spacing: 0.02em;
-    text-align: center;
-  }
-  .paragraph {
-    max-width: auto 0;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 150%;
-    letter-spacing: 0.02em;
-    margin-bottom: 72px;
-  }
-  .lis-a {
-    border-radius: 0 0 4px 4px;
-    padding: 0px 0px 32px 0px;
-    width: auto 0;
-    margin-bottom: 72px;
-  }
-  .hsek-d-list-a {
-    border-radius: 0 0 4px 4px;
-    padding: 0px 0px 32px 0px;
-    width: 288px;
-    height: 400px;
-    margin-bottom: 72px;
-  }
-  img {
-    margin: auto;
-  }
-
-  .hsek-d-list {
-    display: center;
-    border-bottom: 1px solid var(--cornflower);
-    border-left: 1px solid var(--cornflower);
-    border-right: 1px solid var(--cornflower);
-    padding: 32px 16px;
-    width: auto;
-  }
-
-  .footer {
-    display: block;
+      url(../images/hero image-mobile-x2.jpg);
   }
 }
+
+@media screen and (max-width: 767px) {
+  .container {
+    max-width: 100%;
+    background-position: center;
+  }
+}
+
+.hsek-c-list,
+.hsek-d-list,
+.nav-new {
+  display: block;
+}
+.hsek-c-list {
+  display: flex;
+  flex-direction: column;
+  gap: 72px;
+  align-items: center;
+}
+.hsek-b-list {
+  display: flex;
+  flex-direction: column;
+  gap: 72px;
+}
+
+.nav-new {
+  display: none;
+}
+.hea-c {
+  max-width: auto 0;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 111%;
+  letter-spacing: 0.02em;
+  text-align: center;
+}
+.paragraph {
+  max-width: auto 0;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.02em;
+}
+.lis-a {
+  border-radius: 0 0 4px 4px;
+  padding: 0px 0px 32px 0px;
+  width: auto 0;
+  margin-bottom: 72px;
+}
+.hsek-d-list-a {
+  border-radius: 0 0 4px 4px;
+
+  width: 288px;
+}
+img {
+  margin: auto;
+}
+
+.footer {
+  display: block;
+}
+
 @media (min-width: 768px) and (max-width: 1439px) {
   .container {
     background-position: center;
@@ -271,7 +260,6 @@
     font-size: 16px;
     line-height: 150%;
     letter-spacing: 0.02em;
-    /* margin-bottom: 72px; */
   }
   .lis-a {
     border-radius: 0 0 4px 4px;
@@ -369,7 +357,6 @@ a:hover {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #4d5ae5;
-  margin-right: 76px;
 }
 .logo-footer {
   font-family: "Raleway", sans-serif;
@@ -427,6 +414,19 @@ a:hover {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .link-b-menu {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 111%;
+  letter-spacing: 0.02em;
+  gap: 40px;
+  color: #404bbf;
+  text-decoration: none;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.link-c-menu {
   font-weight: 700;
   font-size: 36px;
   line-height: 111%;
@@ -578,6 +578,7 @@ a:hover {
   display: flex;
   align-items: center;
   margin-right: auto;
+  gap: 40px;
 }
 .menu {
   display: flex;
@@ -1047,9 +1048,6 @@ input[type="checkbox"] .form-modal-label .modal-checkbox-input {
   width: 151px;
   height: 200px; */
 }
-.button-menu {
-  display: none;
-}
 
 /* zadanie 6 */
 
@@ -1095,7 +1093,7 @@ input[type="checkbox"] .form-modal-label .modal-checkbox-input {
     letter-spacing: 0.02em;
     text-align: center;
     color: #fff;
-    max-width: 320px;
+    max-width: 198px;
     margin-bottom: 72px;
   }
 
@@ -1105,8 +1103,8 @@ input[type="checkbox"] .form-modal-label .modal-checkbox-input {
 
   .hea-c {
     font-family: "Roboto", sans-serif;
-    font-weight: 500;
-    font-size: 20px;
+    font-weight: 700;
+    font-size: 36px;
     line-height: 120%;
     letter-spacing: 0.02em;
     text-align: left;
@@ -1180,14 +1178,22 @@ input[type="checkbox"] .form-modal-label .modal-checkbox-input {
   }
 
   .footer-a {
-    display: flex;
-    flex-direction: column;
-    margin: 0;
+    /* display: flex;
+    flex-direction: column; */
+    margin: 72px;
   }
 
   .logo-footer {
-    text-align: center;
-    margin: 0;
+    font-family: "Raleway", sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #4d5ae5;
+    margin-right: 76px;
+    display: block;
     margin-bottom: 16px;
   }
 
@@ -1199,7 +1205,6 @@ input[type="checkbox"] .form-modal-label .modal-checkbox-input {
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #f4f4fd;
-    margin-bottom: 72px;
   }
 
   .to-ten-div {
@@ -1300,7 +1305,7 @@ input[type="checkbox"] .form-modal-label .modal-checkbox-input {
     font-size: 20px;
     line-height: 120%;
     letter-spacing: 0.02em;
-    text-align: left;
+    text-align: center;
     color: #2e2f42;
   }
   .hea-c-ppp {
