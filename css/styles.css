@@ -186,7 +186,7 @@
 }
 .hsek-b-list {
   display: flex;
-  flex-direction: column;
+
   gap: 72px;
 }
 
@@ -199,7 +199,6 @@
   font-size: 36px;
   line-height: 111%;
   letter-spacing: 0.02em;
-  text-align: center;
 }
 .paragraph {
   max-width: auto 0;
@@ -226,74 +225,6 @@ img {
 }
 
 @media (min-width: 768px) and (max-width: 1439px) {
-  .container {
-    background-position: center;
-  }
-  .section-a {
-    background-color: #2e2f42;
-    color: #ffffff;
-    padding-top: 188px;
-    padding-bottom: 188px;
-    max-width: 640px;
-    background-image: linear-gradient(
-        rgba(46, 47, 66, 0.7),
-        rgba(46, 47, 66, 0.7)
-      ),
-      url(../images/hero\ image-tablet.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    margin: 0 auto;
-  }
-  .hsek-b-list,
-  .hsek-c-list,
-  .hsek-d-list,
-  .nav-new {
-    display: flex;
-  }
-  .hea-c {
-    max-width: auto 0;
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 111%;
-    letter-spacing: 0.02em;
-    text-align: center;
-    margin-bottom: 72px;
-    text-align: center;
-  }
-  .paragraph {
-    max-width: auto 0;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 150%;
-    letter-spacing: 0.02em;
-  }
-  .lis-a {
-    border-radius: 0 0 4px 4px;
-    width: auto 0;
-  }
-  .hsek-d-list-a {
-    border-radius: 0 0 4px 4px;
-    padding: 0px 0px 32px 0px;
-
-    margin-bottom: 72px;
-  }
-  img {
-    margin: auto;
-  }
-
-  .hsek-d-list {
-    display: center;
-    border-bottom: 1px solid var(--cornflower);
-    border-left: 1px solid var(--cornflower);
-    border-right: 1px solid var(--cornflower);
-    padding: 32px 16px;
-    width: auto;
-  }
-
-  .footer {
-    display: flex;
-  }
 }
 .section-b {
   color: #2e2f42;
@@ -374,7 +305,7 @@ a:hover {
   text-transform: uppercase;
   text-decoration: none;
   color: #4d5ae5;
-  margin-right: 76px;
+
   display: inline-block;
   margin-bottom: 16px;
 }
@@ -734,7 +665,6 @@ ol {
   fill: #f4f4fd;
 }
 .social-p {
-  display: flex;
   align-items: baseline;
   font-weight: 500;
   font-size: 16px;
@@ -1062,6 +992,10 @@ input[type="checkbox"] .form-modal-label .modal-checkbox-input {
   .container {
     max-width: 320px;
   }
+  .footer .container-footer {
+    display: flex;
+    gap: 72px;
+  }
   .button-menu {
     width: 24px;
     height: 24px;
@@ -1114,7 +1048,7 @@ input[type="checkbox"] .form-modal-label .modal-checkbox-input {
     font-size: 36px;
     line-height: 120%;
     letter-spacing: 0.02em;
-    text-align: left;
+
     color: #2e2f42;
   }
   .hea-c-ppp {
@@ -1188,7 +1122,7 @@ input[type="checkbox"] .form-modal-label .modal-checkbox-input {
     color: #ffffff;
   }
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .menu,
   .address,
   .boxx {
@@ -1201,6 +1135,78 @@ input[type="checkbox"] .form-modal-label .modal-checkbox-input {
   }
   .button-menu {
     display: none;
+  }
+  .section-d {
+    padding-top: 96px;
+    padding-bottom: 96px;
+  }
+  .container {
+    background-position: center;
+  }
+  .section-a {
+    background-color: #2e2f42;
+    color: #ffffff;
+    padding-top: 188px;
+    padding-bottom: 188px;
+    max-width: 640px;
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/hero\ image-tablet.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin: 0 auto;
+  }
+  .hsek-b-list {
+    display: flex;
+  }
+
+  .hsek-c-list,
+  .hsek-d-list,
+  .nav-new {
+    display: flex;
+  }
+  .hea-c {
+    max-width: auto 0;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 111%;
+    letter-spacing: 0.02em;
+
+    margin-bottom: 72px;
+  }
+  .paragraph {
+    max-width: auto 0;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0.02em;
+  }
+  .lis-a {
+    border-radius: 0 0 4px 4px;
+    width: auto 0;
+  }
+  .hsek-d-list-a {
+    border-radius: 0 0 4px 4px;
+  }
+  img {
+    margin: auto;
+  }
+
+  .footer {
+    display: flex;
+  }
+  .paragraph-app {
+    font-weight: 400;
+    line-height: 1.5em;
+    letter-spacing: 0.02em;
+    background-color: #ffffff;
+    color: #434455;
+  }
+  .hsek-c-list {
+    align-items: center;
   }
 }
 
@@ -1290,7 +1296,6 @@ input[type="checkbox"] .form-modal-label .modal-checkbox-input {
   }
 
   .hsek-b-list {
-    flex-wrap: wrap;
     gap: 72px 24px;
   }
 
@@ -1318,7 +1323,7 @@ input[type="checkbox"] .form-modal-label .modal-checkbox-input {
 
   .hsek-c-list {
     flex-wrap: wrap;
-    align-self: center;
+    justify-content: center;
     gap: 64px 24px;
   }
 
@@ -1333,10 +1338,6 @@ input[type="checkbox"] .form-modal-label .modal-checkbox-input {
     gap: 72px 24px;
   }
 
-  .footer-a {
-    margin: 0;
-  }
-
   .form-footer {
     margin: 0;
   }
@@ -1346,16 +1347,16 @@ input[type="checkbox"] .form-modal-label .modal-checkbox-input {
     font-size: 20px;
     line-height: 120%;
     letter-spacing: 0.02em;
-    text-align: center;
+
     color: #2e2f42;
   }
   .hea-c-ppp {
     font-family: "Roboto", sans-serif;
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 120%;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 111%;
     letter-spacing: 0.02em;
-    text-align: center;
+
     color: #2e2f42;
   }
   .paragraph-app {
@@ -1366,5 +1367,15 @@ input[type="checkbox"] .form-modal-label .modal-checkbox-input {
     letter-spacing: 0.02em;
     text-align: left;
     color: #2e2f42;
+  }
+  .footer .container-footer {
+    display: flex;
+    gap: 72px;
+  }
+  .hsek-d-list {
+    display: center;
+    border-bottom: 1px solid var(--cornflower);
+    border-left: 1px solid var(--cornflower);
+    border-right: 1px solid var(--cornflower);
   }
 }
