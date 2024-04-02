@@ -1289,6 +1289,10 @@ input[type="checkbox"] .form-modal-label .modal-checkbox-input {
   .li-a {
     margin-bottom: 0;
   }
+  .hsek-b-list {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 @media (min-width: 768px) and (max-width: 1158px) {
