@@ -1169,11 +1169,10 @@ input[type="checkbox"] .form-modal-label .modal-checkbox-input {
     margin: 0 auto;
   }
   .hsek-b-list {
-    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
   }
 
-  .hsek-c-list,
-  .hsek-d-list,
   .nav-new {
     display: flex;
   }
@@ -1214,9 +1213,9 @@ input[type="checkbox"] .form-modal-label .modal-checkbox-input {
     background-color: #ffffff;
     color: #434455;
   }
-  .hsek-c-list {
+  /* .hsek-c-list {
     align-items: center;
-  }
+  } */
 }
 
 @media (max-width: 768px) {
@@ -1295,7 +1294,7 @@ input[type="checkbox"] .form-modal-label .modal-checkbox-input {
   }
 }
 
-@media (min-width: 768px) and (max-width: 1158px) {
+@media (min-width: 768px) and (max-width: 1439px) {
   .container {
     width: 768px;
   }
@@ -1335,9 +1334,10 @@ input[type="checkbox"] .form-modal-label .modal-checkbox-input {
   }
 
   .hsek-c-list {
+    display: flex;
     flex-wrap: wrap;
-    justify-content: center;
-    gap: 64px 24px;
+    height: auto;
+    width: calc((100% - 24px) / 2);
   }
 
   .hsek-d-list-a {
@@ -1357,8 +1357,8 @@ input[type="checkbox"] .form-modal-label .modal-checkbox-input {
   .hea-c {
     font-family: "Roboto", sans-serif;
     font-weight: 500;
-    font-size: 20px;
-    line-height: 120%;
+    font-size: 36px;
+    line-height: 111%;
     letter-spacing: 0.02em;
 
     color: #2e2f42;
