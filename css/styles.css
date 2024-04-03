@@ -189,7 +189,7 @@
 }
 .hsek-c-list {
   display: flex;
-  flex-direction: column;
+
   gap: 72px;
   align-items: center;
 }
@@ -233,12 +233,12 @@ img {
   display: block;
 }
 
-@media (min-width: 768px) and (max-width: 1439px) {
+@media (min-width: 768px) and (max-width: 1157px) {
 }
 .section-b {
   color: #2e2f42;
-  padding-top: 120px;
-  padding-bottom: 120px;
+  padding-top: 96px;
+  padding-bottom: 96px;
 }
 .section-c {
   background-color: #f4f4fd;
@@ -257,7 +257,6 @@ img {
   padding-bottom: 100px;
 }
 .footer-a {
-  margin-right: 120px;
 }
 .button {
   background-color: #4d5ae5;
@@ -1034,6 +1033,9 @@ input[type="checkbox"] .form-modal-label .modal-checkbox-input {
   .section-a {
     padding: 72px 0;
   }
+  .hsek-c-list {
+    flex-direction: column;
+  }
 
   .hea-a {
     font-family: "Roboto", sans-serif;
@@ -1057,6 +1059,7 @@ input[type="checkbox"] .form-modal-label .modal-checkbox-input {
     font-size: 36px;
     line-height: 120%;
     letter-spacing: 0.02em;
+    text-align: center;
 
     color: #2e2f42;
   }
@@ -1138,7 +1141,7 @@ input[type="checkbox"] .form-modal-label .modal-checkbox-input {
     display: none;
   }
 }
-@media (min-width: 768px) and (max-width: 1439px) {
+@media (min-width: 768px) and (max-width: 1157px) {
   .nav-new {
     display: none;
   }
@@ -1155,22 +1158,44 @@ input[type="checkbox"] .form-modal-label .modal-checkbox-input {
   .section-a {
     background-color: #2e2f42;
     color: #ffffff;
-    padding-top: 188px;
-    padding-bottom: 188px;
-    max-width: 640px;
+    padding-top: 112px;
+    padding-bottom: 112px;
     background-image: linear-gradient(
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
       ),
-      url(../images/hero\ image-tablet.jpg);
+      url(../images/hero\ image-tablet-x2.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     margin: 0 auto;
   }
+  .address-list-menu {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 120%;
+    letter-spacing: 0.02em;
+  }
+  .header {
+    border-bottom: 1px solid #e7e9fc;
+
+    box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
+      0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
+  }
   .hsek-b-list {
     flex-wrap: wrap;
     justify-content: center;
+  }
+  .address-a {
+    font-size: 12px;
+    text-decoration: none;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #434455;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
 
   .nav-new {
@@ -1218,7 +1243,7 @@ input[type="checkbox"] .form-modal-label .modal-checkbox-input {
   } */
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .footer {
     padding: 96px 0;
   }
@@ -1260,7 +1285,6 @@ input[type="checkbox"] .form-modal-label .modal-checkbox-input {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin-bottom: 72px;
   }
 
   .social-p {
@@ -1294,7 +1318,7 @@ input[type="checkbox"] .form-modal-label .modal-checkbox-input {
   }
 }
 
-@media (min-width: 768px) and (max-width: 1439px) {
+@media (min-width: 768px) and (max-width: 1157px) {
   .container {
     width: 768px;
   }
@@ -1317,6 +1341,7 @@ input[type="checkbox"] .form-modal-label .modal-checkbox-input {
 
   .section-b .hea-c {
     margin-bottom: 8px;
+    font-weight: 700;
   }
 
   .section-b .paragraph {
@@ -1336,8 +1361,9 @@ input[type="checkbox"] .form-modal-label .modal-checkbox-input {
   .hsek-c-list {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
     height: auto;
-    width: calc((100% - 24px) / 2);
+    gap: 64px 24px;
   }
 
   .hsek-d-list-a {
@@ -1348,7 +1374,6 @@ input[type="checkbox"] .form-modal-label .modal-checkbox-input {
   .container-footer {
     max-width: 530px;
     flex-wrap: wrap;
-    gap: 72px 24px;
   }
 
   .form-footer {
@@ -1365,9 +1390,7 @@ input[type="checkbox"] .form-modal-label .modal-checkbox-input {
   }
   .hea-c-ppp {
     font-family: "Roboto", sans-serif;
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 111%;
+
     letter-spacing: 0.02em;
 
     color: #2e2f42;
@@ -1383,7 +1406,7 @@ input[type="checkbox"] .form-modal-label .modal-checkbox-input {
   }
   .footer .container-footer {
     display: flex;
-    gap: 72px;
+    gap: 72px 24px;
   }
   .hsek-d-list {
     display: center;
