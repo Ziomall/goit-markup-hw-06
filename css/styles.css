@@ -128,7 +128,7 @@
 }
 .header {
   border-bottom: 1px solid #e7e9fc;
-  padding: 24px 0;
+
   box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
@@ -244,7 +244,7 @@ img {
   background-color: #f4f4fd;
   color: #2e2f42;
   padding-top: 120px;
-  padding-bottom: 120px;
+  padding-bottom: 96px;
 }
 .section-d {
   padding-top: 120px;
@@ -426,7 +426,7 @@ a:hover {
 }
 .address-list-menu {
   display: flex;
-  flex-direction: column;
+
   gap: 40px;
   font-weight: 500;
   font-size: 20px;
@@ -494,8 +494,6 @@ a:hover {
 
 .li-a {
   list-style: none;
-  margin-bottom: 72px;
-  /* width: calc((100% - 72px) / 4); */
 }
 .li-b {
   list-style: none;
@@ -1136,13 +1134,15 @@ input[type="checkbox"] .form-modal-label .modal-checkbox-input {
     color: #ffffff;
   }
 }
+@media screen and (min-width: 768px) {
+  .button-menu {
+    display: none;
+  }
+}
 @media screen and (max-width: 767px) {
   .menu,
   .address,
   .boxx {
-    display: none;
-  }
-  .button-menu {
     display: none;
   }
 }
@@ -1416,5 +1416,57 @@ input[type="checkbox"] .form-modal-label .modal-checkbox-input {
     border-bottom: 1px solid var(--cornflower);
     border-left: 1px solid var(--cornflower);
     border-right: 1px solid var(--cornflower);
+  }
+}
+@media screen and (min-width: 1158px) {
+  .button-menu {
+    display: none;
+  }
+  .section-a {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/people-office-x2.jpg);
+  }
+  .address-a {
+    font-size: 16px;
+    font-weight: 400;
+  }
+  .logo {
+    margin-right: 76px;
+  }
+  .hea-c {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    background-color: #ffffff;
+    margin-bottom: 8px;
+    margin-bottom: 8px;
+  }
+  .paragraph {
+    font-weight: 400;
+    line-height: 1.5em;
+    letter-spacing: 0.02em;
+    background-color: #ffffff;
+    color: #434455;
+  }
+  .hsek-b-list {
+    gap: 24px;
+  }
+  .hsek-c-list {
+    display: flex;
+    gap: 24px;
+    align-items: center;
+  }
+  .hsek-d-list-a {
+    width: 360px;
+  }
+  .form-footer {
+    margin-left: auto;
+  }
+  .footer-a {
+    margin-right: 120px;
   }
 }
