@@ -303,6 +303,7 @@ a:hover {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #4d5ae5;
+  margin-right: 120px;
 }
 .logo-footer {
   font-family: "Raleway", sans-serif;
@@ -329,6 +330,7 @@ a:hover {
   padding-top: 24px;
   padding-bottom: 24px;
   position: relative;
+  display: block;
   transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -524,11 +526,11 @@ a:hover {
   display: flex;
   align-items: center;
   margin-right: auto;
-  gap: 40px;
 }
 .menu {
   display: flex;
   gap: 40px;
+  align-items: center;
 }
 .container {
   width: 1158px;
@@ -1140,14 +1142,15 @@ input[type="checkbox"] .form-modal-label .modal-checkbox-input {
   .boxx {
     display: none;
   }
+  .button-menu {
+    display: none;
+  }
 }
 @media (min-width: 768px) and (max-width: 1157px) {
   .nav-new {
     display: none;
   }
-  .button-menu {
-    display: none;
-  }
+
   .section-d {
     padding-top: 96px;
     padding-bottom: 96px;
