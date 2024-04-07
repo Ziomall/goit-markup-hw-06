@@ -24,16 +24,39 @@
         </p>
         <ul class="contacts__ul">
           <li class="contacts__li__melon">
-            <img
-              class="contacts__images__fruits"
-              src="./images2/contatcs-melon-desktop.jpg"
-              srcset="
-                ./images2/contatcs-melon-desktop.jpg,
-                ./images2/contatcs-melon-desktop@2x.jpg
-              "
-              alt="Melon"
-              width="792px"
-            />
+            <picture>
+              <source
+                media="(max-width: 767.9px)"
+                srcset="
+                      ./images2/contatcs-melon-mobile.jpg,
+                      ./images2/contacts-melon-mobile@2x.jpg x2
+                    "
+              />
+              <source
+                media="(max-width: 1157.9px)"
+                srcset="
+                      ./images2/contatcs-melon-tablet.jpg,
+                      ./images2/contacts-melon-tablet@2x.jpg x2
+                    "
+              />
+              <source
+                media="(min-width: 1158px)"
+                srcset="
+                      ./images2/contatcs-melon-desktop.jpg,
+                      ./images2/contacts-melon-desktop@2x.jpg x2
+                    "
+              />
+              <img
+                class="contacts__images__fruits"
+                src="./images2/contatcs-melon-desktop.jpg"
+                srcset="
+                  ./images2/contatcs-melon-desktop.jpg,
+                  ./images2/contatcs-melon-desktop@2x.jpg
+                "
+                alt="Melon"
+                width="792px"
+              />
+            </picture>
           </li>
           <li class="contacts__li__berries">
             <img
@@ -61,7 +84,7 @@
                 class="contacts__form__input"
                 name="email"
                 type="email"
-                placeholder="Enter email..."
+                placeholder="      Enter email..."
               />
               <button class="contacts__button" type="submit" value="Send">
                 Send
@@ -70,10 +93,10 @@
           </form>
         </div>
       </div>
-      <div class="contacts__modal">
+      <!-- <div class="contacts__modal is-open">
         <button class="contacts__modal__button" type="button">
           <svg class="contacts__modal__button__shlash" width="14" height="14">
-            <use href="./images2/shlash.svg#icon-Vector"></use>
+            <use href="./images/shlash.svg#icon-Vector"></use>
           </svg>
           <svg
             class="contacts__modal__button__backshlash"
@@ -85,10 +108,10 @@
         </button>
         <img
           class="contacts__raspberry"
-          src="./images2/modalthank-raspberry-desktop-tablet-min.png"
+          src="./images/modalthank-raspberry-desktop-tablet-min.png"
           srcset="
-            ./images2/modalthank-raspberry-desktop-tablet-min.png,
-            ./images2/modalthank-raspberry-desktop-tablet@2x.png
+            ./images/modalthank-raspberry-desktop-tablet-min.png,
+            ./images/modalthank-raspberry-desktop-tablet@2x.png
           "
           width="278"
         />
@@ -101,7 +124,7 @@
             providing you with the best possible experience!
           </p>
         </div>
-      </div>
+      </div> -->
     </section>
   </body>
 </html>
